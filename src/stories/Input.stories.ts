@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
-import Button from '../components/Button.vue';
+import Input from '../components/Input.vue';
 
 const meta = {
-  title: 'Example/Button',
-  component: Button,
- 
+  title: 'Example/Input',
+  component: Input,
+  
   tags: ['autodocs'],
-  args: { title: 'Search' },
-} satisfies Meta<typeof Button>;
+  args: { type: 'text', placeholder: 'Type here' },
+} satisfies Meta<typeof Input>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
